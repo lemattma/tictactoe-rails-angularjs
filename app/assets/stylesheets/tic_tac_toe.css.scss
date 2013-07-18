@@ -1,0 +1,29 @@
+
+.tictactoe-wrap{
+  width: 153px;
+  border: 1px solid #444;
+  border-width: 1px 0 0 1px;
+  overflow: hidden;
+  
+  .cell{
+    border: 1px solid #444;
+    border-width: 0 1px 1px 0;
+    height: 40px;
+    width: 50px;
+    float: left;
+    cursor: pointer;
+    
+    .xsign{
+      padding: 8px 0;
+      display: block;
+      color: #006ccc;
+      font: bold 25px/1 Arial;
+      text-align: center;
+    }
+    
+    .btn{
+      margin: 5px 0 0 6px;
+      display: none;
+    }
+  }
+}
