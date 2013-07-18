@@ -8,6 +8,7 @@ function T3Ctrl($scope) {
   };
  
 }
+T3Ctrl.$inject = ['$scope', '$http'];
 
 $(document).ready(function(){  
   $('.cell').mouseenter(function(e){
