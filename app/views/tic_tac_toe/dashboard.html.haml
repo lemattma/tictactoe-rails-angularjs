@@ -1,8 +1,4 @@
-%h1 Tic Tac Toe
-
-%p You play X
-
-.tictactoe-wrap{'ng-controller'=> "T3Ctrl", "ng-app"=>''}
-  - (0..8).each do |i|
-    .cell{id: "cell-#{i}"}
-      %button.btn.btn-primary{"ng-click"=>"move($event, e.id)"} X
+%div{'ng-controller'=> "Dashboard"}
+  %h1 Tic Tac Toe
+  %p You play X
+  %div{'ng-view'=>''}
