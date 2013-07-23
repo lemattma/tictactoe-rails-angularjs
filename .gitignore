@@ -1,3 +1,4 @@
+*.DS_Store
 *.rbc
 *.sassc
 .sass-cache
@@ -5,6 +6,7 @@ capybara-*.html
 .rspec
 /.bundle
 /vendor/bundle
+/public/assets
 /log/*
 /tmp/*
 /db/*.sqlite3

@@ -2,4 +2,7 @@
   - for i in [1..9]
     .cell{id: i, "ng-mouseenter"=>"show($event)", "ng-mouseleave"=>"hide($event)"}
       %button.btn.btn-primary{"ng-click"=>"move($event)"} X
-.winner {{winner}}
+      
+
+%h3.winner {{winner}}
+%a.btn.btn-large{"ng-click"=>"playAgain()", "ng-show"=>"winner"} I do want to play again !
