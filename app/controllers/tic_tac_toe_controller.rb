@@ -8,3 +8,4 @@ class TicTacToeController < ApplicationController
     render :json => { next_move: _next_move }
   end
 end
+
