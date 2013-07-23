@@ -49,6 +49,7 @@ angular.module('tictactoe', ['ngResource'])
     
     // Did I win?
     winner = $scope.win();
+    console.log(winner);
     
     if(winner) {
       $scope.winner = 'YOU won! =D';
@@ -62,6 +63,7 @@ angular.module('tictactoe', ['ngResource'])
         
         // Did server win?
         winner = $scope.win();
+        console.log(winner);
         if(winner){
           $scope.winner = winner + ' has won.. TT';
         }
@@ -85,7 +87,19 @@ angular.module('tictactoe', ['ngResource'])
     $.each(['xsign','osign'], function(i,v) {
       
       name = (v == 'xsign') ? 'X' : 'O';
-      winning_formulas = ['#1, #2, #3', '#4, #5, #6', '#7, #8, #9', '#3, #6, #9', '#1, #4, #7', '#1, #5, #9', '#3, #5, #7'];
+      winning_formulas = [
+        // horizontal
+        '#1, #2, #3', 
+        '#4, #5, #6', 
+        '#7, #8, #9', 
+        // vertical
+        '#1, #4, #7', 
+        '#2, #5, #8',
+        '#3, #6, #9', 
+        // diagonal
+        '#1, #5, #9', 
+        '#3, #5, #7' 
+      ];
       
       // check each winning row possible for x and o
       $.each(winning_formulas, function(id,vl) {
