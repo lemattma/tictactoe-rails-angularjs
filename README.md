@@ -1,4 +1,6 @@
 tictactoe-rails-angularjs
 =========================
 
-Tic Tac Toe demo – Rails + AngularJS
+Super simple Tic Tac Toe game with Rails + AngularJS
+
+[Demo here!](http://tictactoe-railsangular.herokuapp.com/)
