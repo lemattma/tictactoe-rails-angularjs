@@ -1,0 +1,11 @@
+!!! 5
+%html{ ng: { app: 'tictactoe' } }
+  %head
+    %title Tictactoe
+    = stylesheet_link_tag 'application', media: 'all'
+    = csrf_meta_tags
+  %body
+    .container
+      = yield
+      = render 'layouts/gb_ribbon'
+    = javascript_include_tag 'application'
